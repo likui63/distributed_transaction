@@ -45,7 +45,8 @@ public class OrderServiceImpl implements OrderService {
                 Message message = new Message();
                 message.setAmount(amount);
                 message.setUserId(userId);
-                return messageMapper.addMessage(message);
+                messageMapper.addMessage(message);
+                return message.getId();
             }
             return null;
         });

@@ -19,7 +19,7 @@ public class YuebaoServerApplicationTests {
     public void contextLoads() {
         Account account = new Account();
         account.setAmount(200);
-        account.setUserId("chenghao");
+        account.setUserId("dengjing");
         accountMapper.addAccount(account);
     }
 
